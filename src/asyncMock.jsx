@@ -1,13 +1,12 @@
-import React from 'react'
 
-
-const productos = [
+const products = [
   {
     id: 'denimceleste',
     nombre: 'Denim Celeste',
     img: './images/tienda/denim-celeste.jpg',
     precio: 4700,
     cantidad: 1,
+    category:'denim'
   },
 
   {
@@ -16,6 +15,7 @@ const productos = [
     img: './images/tienda/denim-azul.jpg',
     precio: 4700,
     cantidad: 1,
+    category:'denim'
   },
 
   {
@@ -24,6 +24,7 @@ const productos = [
     img: './images/tienda/denim-blanco.jpg',
     precio: 4700,
     cantidad: 1,
+    category:'denim'
   },
 
   {
@@ -32,6 +33,7 @@ const productos = [
     img: './images/tienda/denim-negro.jpg',
     precio: 4700,
     cantidad: 1,
+    category:'denim'
   },
 
   {
@@ -40,6 +42,7 @@ const productos = [
     img: './images/tienda/azul-marino.jpg',
     precio: 3900,
     cantidad: 1,
+    category:'melange'
   },
 
   {
@@ -48,6 +51,7 @@ const productos = [
     img: './images/tienda/borravino.jpg',
     precio: 3900,
     cantidad: 1,
+    category:'melange'
   },
 
   {
@@ -56,6 +60,7 @@ const productos = [
     img: './images/tienda/skinny.jpg',
     precio: 3900,
     cantidad: 1,
+    category:'melange'
   },
 
   {
@@ -64,12 +69,31 @@ const productos = [
     img: './images/tienda/oliva.jpg',
     precio: 3900,
     cantidad: 1,
+    category:'melange'
   },
 ]
 
+export const getProducts = () => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(products)
+    }, 500)
+  })
+}
+
+export const getProductById = (productId) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(products.find(prod => prod.id === productId))
+    }, 500)
+  })
+}
+
+
+/*
 export const ProductList = () => {
 
-  const list = productos.map(
+  const list = products.map(
     (producto) =>
     <div className="col mb-3">
       <div className="card" id={producto.id}>
@@ -89,6 +113,5 @@ export const ProductList = () => {
       }
     </div>
   )
+*/
 
-
-}
