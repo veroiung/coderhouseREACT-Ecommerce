@@ -64,6 +64,10 @@ h1 {
   font-size: 15px;
 }
 
+.tienda img {
+  width: 30%;
+}
+
 
 .btn-agregar {
   font-size: 12px;
@@ -279,3 +283,4 @@ display: none;
 .luego {
   padding-top: 10px ;
 }
+

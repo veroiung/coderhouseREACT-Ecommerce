@@ -16,21 +16,22 @@ const NavBar = () => {
             </div>
             <CartWidget />
         </nav>
+         */
 
          <nav className='NavBar'>
             <Link to='/'>
             <h3>Tienda inJOGG</h3>
             </Link>
            <div className='Categories'>
-                <NavLink to={`/category/denim`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Denim</NavLink>
-                <NavLink to={`/category/melange`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Melange</NavLink>
+                <Link to={`/category/denim`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Denim</Link>
+                <Link to={`/category/melange`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Melange</Link>
             </div>
             <CartWidget />
         </nav>
 
-        */
+       
 
-        <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+         /*<nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
             <a className="navbar-brand" href="index.html">
             </a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -49,18 +50,20 @@ const NavBar = () => {
                         <a className="nav-link" href="index.html">Categoría DOS</a></li>
                     <li className="nav-item">
                         <a className="nav-link" href="index.html">Categoría TRES</a></li>
-                    <li className="nav-item">
+                    <li className="nav-item"> 
 
                     <CartWidget />
                        {/* <a class="nav-link" href="carrito.html" title="carrito de compras">
-                <img src="images/iconos/cart-fill.svg"/><span class="numerito" id="numerito">0</span></a> */}
+                <img src="images/iconos/cart-fill.svg"/><span class="numerito" id="numerito">0</span></a> 
                     </li>
                   
                 </ul>
             </div>
         </nav>
+        */
         
     )
+
 }
 
 

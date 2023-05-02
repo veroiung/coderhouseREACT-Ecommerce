@@ -1,4 +1,4 @@
-import cart from './assets/iconos/cart-fill.svg'
+import cart from '././assets/iconos/cart-fill.svg'
 
 
 const CartWidget = () => {
@@ -6,7 +6,7 @@ const CartWidget = () => {
     return(
         <div>
             <img src={cart} alt="cart-widget"/>
-            <span className="numerito" id="numerito">0</span>
+           {/*<span className="numerito" id="numerito">0</span>*/} 
         </div>
     )
 }
