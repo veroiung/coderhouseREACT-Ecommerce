@@ -41,9 +41,10 @@ h1 {
 
 
 .tienda {
-  width: fit-content;
+  display: flex;
+  /* width: fit-content; */
   margin: 0 auto;
-  padding: 10px 50px 10px 50px;
+  padding: 10px 10px 10px 10px;
 }
 
 .tienda a {
@@ -65,7 +66,8 @@ h1 {
 }
 
 .tienda img {
-  width: 30%;
+  width: 100%;
+ 
 }
 
 
@@ -77,7 +79,7 @@ h1 {
   text-align: center;
   color: #ffffff;
   margin-bottom: 10px;
-  margin-top: 15px;
+  margin-top: 30px;
 }
 
 .btn-agregar:hover,
@@ -284,3 +286,6 @@ display: none;
   padding-top: 10px ;
 }
 
+.footer-btn {
+  margin-top: 20px;
+}

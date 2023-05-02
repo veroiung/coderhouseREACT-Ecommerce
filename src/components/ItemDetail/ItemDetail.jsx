@@ -3,7 +3,7 @@ import ItemCount from '../ItemCount/ItemCount';
 
 const ItemDetail = ({ id, nombre, img, precio, stock }) => {
     return(
-         <div className='col mb-6'>
+         <div className='col mb-3'>
             <div className='card' id={id}>
             </div>
                <picture>
