@@ -1,35 +1,35 @@
 
 import CartWidget from '../CartWidget/CartWidget'
-import { NavLink, Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 
 const NavBar = () => {
     return (
-       
-
-        /*<nav>
-            <h3>Tienda INJOGG</h3>
-            <div>
-                <button>UNO</button>
-                <button>DOS</button>
-                <button>TRES</button>
-            </div>
-            <CartWidget />
-        </nav>
-         */
-
-         <nav className='NavBar'>
-            <Link to='/'>
+    
+        <nav className='NavBar'>
+            <NavLink variant="pills" to={'/'}>
             <h3>Tienda inJOGG</h3>
-            </Link>
+            </NavLink>
+           
            <div className='Categories'>
-                <Link to={`/category/denim`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Denim</Link>
-                <Link to={`/category/melange`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Melange</Link>
+                <NavLink to='/category/denim' activeclassName='ActiveOption'>
+                    <h4>Denim</h4>
+                </NavLink>
+                <div></div>
+                <NavLink to='/category/melange' activeclassName='ActiveOption'>
+                    <h4>Melange</h4>
+                </NavLink>
             </div>
             <CartWidget />
         </nav>
 
-       
+)
+
+}
+
+export default NavBar
+
+        
 
          /*<nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
             <a className="navbar-brand" href="index.html">
@@ -62,10 +62,3 @@ const NavBar = () => {
         </nav>
         */
         
-    )
-
-}
-
-
-
-export default NavBar

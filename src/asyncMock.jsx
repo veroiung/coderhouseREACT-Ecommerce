@@ -1,7 +1,7 @@
 
 const products = [
   {
-    id: 'denimceleste',
+    id: '1',
     nombre: 'Denim Celeste',
     img: '././images/tienda/denim-celeste.jpg',
     precio: 4700,
@@ -10,7 +10,7 @@ const products = [
   },
 
   {
-    id: 'denimazul',
+    id: '2',
     nombre: 'Denim Azul',
     img: '././images/tienda/denim-azul.jpg',
     precio: 4700,
@@ -19,7 +19,7 @@ const products = [
   },
 
   {
-    id: 'denimblanco',
+    id: '3',
     nombre: 'Denim Blanco',
     img: '././images/tienda/denim-blanco.jpg',
     precio: 4700,
@@ -28,7 +28,7 @@ const products = [
   },
 
   {
-    id: 'denimnegro',
+    id: '4',
     nombre: 'Denim Negro',
     img: '././images/tienda/denim-negro.jpg',
     precio: 4700,
@@ -37,7 +37,7 @@ const products = [
   },
 
   {
-    id: 'azulmarino',
+    id: '5',
     nombre: 'Azul Marino',
     img: '././images/tienda/azul-marino.jpg',
     precio: 3900,
@@ -46,7 +46,7 @@ const products = [
   },
 
   {
-    id: 'borravino',
+    id: '6',
     nombre: 'Borravino',
     img: '././images/tienda/borravino.jpg',
     precio: 3900,
@@ -55,7 +55,7 @@ const products = [
   },
 
   {
-    id: 'skinny',
+    id: '7',
     nombre: 'Skinny',
     img: '././images/tienda/skinny.jpg',
     precio: 3900,
@@ -64,7 +64,7 @@ const products = [
   },
 
   {
-    id: 'oliva',
+    id: '8',
     nombre: 'Oliva',
     img: '././images/tienda/oliva.jpg',
     precio: 3900,
@@ -89,10 +89,10 @@ export const getProductById = (productId) => {
   })
 }
 
-export const getProductByCategory = (productCategory) => {
+export const getProductByCategory = (categoryId) => {
   return new Promise((resolve) => {
     setTimeout(() => {
-      resolve(products.filter(prod => prod.category === productCategory))
+      resolve (products.filter((product) => product.category === categoryId))
     }, 500)
   })
 }
@@ -121,5 +121,15 @@ export const ProductList = () => {
       }
     </div>
   )
+
+  RECIEN con DIEGO
+  export const getProductByCategory = (categoryId) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      const filteredProducts = products.filter((product) => product.category === categoryId);
+      resolve(filteredProducts);
+    }, 500)
+  })
+
 */
 
