@@ -3,7 +3,7 @@
   margin: 0 auto;
 }
 
-.logo{
+.logo {
   display: flex;
   padding-top: 40px;
 }
@@ -67,7 +67,7 @@ h1 {
 
 .tienda img {
   width: 100%;
- 
+
 }
 
 
@@ -79,9 +79,6 @@ h1 {
   padding: 10px 15px;
   text-align: center;
   color: #ffffff;
-  margin-top: 50px;
-  margin-bottom: 10px;
- 
 }
 
 .btn-style:hover,
@@ -260,11 +257,11 @@ h1 {
   cursor: pointer;
 }
 
-.disabled{
-display: none;
-} 
+.disabled {
+  display: none;
+}
 
-.numerito{
+.numerito {
   background-color: black;
   color: #ffffff;
   padding: 5px 10px 5px 10px;
@@ -282,11 +279,11 @@ display: none;
 }
 
 .greeting {
-  padding-top: 80px ;
+  padding-top: 80px;
 }
 
 .luego {
-  padding-top: 10px ;
+  padding-top: 10px;
 }
 
 .footer-btn {
@@ -306,15 +303,17 @@ display: none;
   width: 40%;
 }
 
-.Controls{
+.Controls {
   display: flex;
-  justify-content: center; /* Centrado horizontal */
-  align-items: center; /* Centrado vertical */
+  justify-content: center;
+  /* Centrado horizontal */
+  align-items: center;
+  /* Centrado vertical */
 }
 
-.Controls h4{
+.Controls h4 {
   padding: 20px 20px;
-  
+
 }
 
 .Center {
@@ -328,10 +327,10 @@ display: none;
 }
 
 .Number {
-  place-items: center; 
-  font-size:larger;
+  place-items: center;
+  font-size: larger;
   font-weight: bolder;
-  align-items: center; 
+  align-items: center;
   margin-top: 15px;
 }
 
@@ -365,7 +364,7 @@ display: none;
 .btn-v {
   font-size: 17px;
   font-weight: bold;
-  background-color:darkgreen; 
+  background-color: darkgreen;
   border-radius: 7px;
   padding: 10px 27px 15px 27px;
   text-align: center;
@@ -373,15 +372,14 @@ display: none;
   margin-bottom: 15px;
   margin-top: 20px;
   margin-left: 15px;
-  
+
 }
 
 .btn-v:hover,
 .btn-v:focus,
 .btn-v.active {
   color: #353a3f;
-  border: 2px solid darkgreen; 
+  border: 2px solid darkgreen;
   outline: none;
   background: transparent;
 }
-
